@@ -1,0 +1,57 @@
+[
+  {
+    "id": 1,
+    "name": "Rakesh Bhavani",
+    "location": "Surat",
+    "rating": 5,
+    "review": "The house design is modern and visually appealing with a clean white and wood combination. Large windows ensure ample natural light and enhance the overall aesthetic. The symmetrical structure adds a sense of balance and elegance. Greenery around the property creates a refreshing and welcoming vibe. Slight variations in facade or driveway design could make each unit feel more unique.",
+    "image":
+      "https://ik.imagekit.io/0llvylbdm/feedback/image_1.jpg?updatedAt=1744953898514",
+    "person":
+      "https://ik.imagekit.io/0llvylbdm/person_img/person_3.jpeg?updatedAt=1743068070110"
+  },
+  {
+    "id": 2,
+    "name": "Suresh Shah",
+    "location": "Vadodara",
+    "rating": 4,
+    "review": "The design has a stylish and contemporary look with warm brick tones and elegant lighting. Vertical lines and structured balconies add a sense of height and modernity. The warm evening lights enhance the overall ambiance, making it feel cozy and upscale. Greenery and potted plants add a refreshing natural touch. Slight variation in the facade could bring more individuality to each unit.",
+    "image":
+      "https://ik.imagekit.io/0llvylbdm/feedback/image_3.jpg?updatedAt=1744953897734",
+    "person":
+      "https://ik.imagekit.io/0llvylbdm/person_img/person_5.jpg?updatedAt=1743068069166"
+  },
+  {
+    "id": 3,
+    "name": "Harish Patel",
+    "location": "Surat",
+    "rating": 5,
+    "review": "The house design is sleek and ultra-modern with a minimalist aesthetic and clean lines. The use of warm lighting and wooden textures adds a cozy, luxurious feel. Glass railings and rooftop greenery enhance the contemporary look. Landscaping with tropical plants gives it a refreshing and vibrant appeal. Unique balcony and terrace layouts add charm and individuality to each unit.",
+    "image":
+      "https://ik.imagekit.io/0llvylbdm/feedback/image_4.jpg?updatedAt=1744953900735",
+    "person":
+      "https://ik.imagekit.io/0llvylbdm/person_img/person_3.jpg?updatedAt=1743068069095"
+  },
+  {
+    "id": 4,
+    "name": "Sahil Agrawal",
+    "location": "Ahmedabad",
+    "rating": 4,
+    "review": "The apartment complex offers a luxurious and relaxing vibe with a beautifully designed pool area. The wooden deck and lounge chairs create an inviting space for residents to unwind. Elegant architectural detailing on the building façade adds a touch of sophistication. Artistic wall elements and greenery enhance the aesthetic appeal. Overall, it strikes a great balance between comfort, style, and functionality.",
+    "image":
+      "https://ik.imagekit.io/0llvylbdm/feedback/image_5.jpg?updatedAt=1744953897001",
+    "person":
+      "https://ik.imagekit.io/0llvylbdm/person_img/person_1.jpg?updatedAt=1743068068928"
+  },
+  {
+    "id": 5,
+    "name": "parth sharma",
+    "location": "Ahmedabad",
+    "rating": 5,
+    "review": "This apartment complex presents a modern and elegant architectural style with clean lines and a symmetrical design. The spacious balconies and full-length glass windows offer great views and natural light. The entrance gate adds a touch of grandeur, giving a sense of exclusivity. Lush greenery around the property enhances its overall charm. It’s an ideal blend of contemporary living and visual appeal.",
+    "image":
+      "https://ik.imagekit.io/0llvylbdm/feedback/image_6.jpg?updatedAt=1744953897652",
+    "person":
+      "https://ik.imagekit.io/0llvylbdm/person_img/person_2.jpg?updatedAt=1743068069091"
+  }
+]

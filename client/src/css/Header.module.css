@@ -1,0 +1,224 @@
+:root {
+  
+    --hovercolor: linear-gradient(to right, #0fd850 0%, #f9f047 100%);
+    color: white;
+}
+
+body {
+    font-size: 100%;
+}
+
+.nav_container {
+    display: flex;
+    align-items: center;
+    height: 4.5rem;
+    text-transform: capitalize;
+    justify-content: space-around;
+    .img_container {
+        width: 200px;
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+
+    .nav_pages {
+
+        ul {
+            display: flex;
+            list-style: none;
+            gap: 1.5rem;
+            
+
+            & li a {
+                text-decoration: none;
+                position: relative;
+                color: white;
+                
+                &::after {
+                    position: absolute;
+                    content: "";
+                    border-bottom: 2px solid  rgb(0, 42, 255);
+                    width: 0%;
+                    left: 0;
+                    bottom: 0;
+                }
+
+                &:hover::after {
+                    width: 100%;
+                    transition: ease-out 1s;
+                }
+            }
+        }
+    }
+
+    .bar {
+        display: none;
+    }
+
+    .authen {
+        display: flex;
+        gap: 0.5rem;
+
+        ul {
+            display: flex;
+            gap: 1rem;
+            list-style: none;
+
+
+            li {
+                height: 2.5rem;
+                font-weight: 900;
+                width: 4rem;
+                border-radius: 2rem;
+                font-size: 0.8rem;
+                display: flex;
+                z-index: 1;
+                overflow: hidden;
+                align-items: center;
+                justify-content: center;
+                border: none;
+                box-shadow: 0px 0px 14px 0px white;
+                position: relative;
+
+                a {
+                    text-decoration: none;
+                    color: white;
+
+
+                }
+
+                &::after {
+                    content: "";
+                    width: 0%;
+                    z-index: -1;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    background-image: var(--hovercolor);
+                    height: 2.5rem;
+                    border-radius: 2rem;
+
+
+                }
+
+                &:hover::after {
+                    width: 100%;
+                    transition: 0.5s ease-out;
+
+
+                }
+
+                &:hover a {
+                    color: black;
+                }
+
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+
+
+    .nav_container {
+
+        .img_container {
+            width: 180px;
+        }
+
+        .nav_pages ul {
+            gap: 1rem;
+        }
+    }
+
+    body {
+        font-size: 85%;
+    }
+
+}
+
+@media only screen and (max-width: 737px) {
+
+
+    .nav_container {
+
+        .img_container {
+            width: 160px;
+        }
+
+    }
+
+    body {
+        font-size: 75%;
+    }
+
+}
+
+@media only screen and (max-width: 645px) {
+
+
+    .nav_container {
+
+        position: relative;
+
+        .img_container {
+            width: 140px;
+
+        }
+
+        .bar {
+            display: block;
+            font-size: 1.5rem;
+
+        }
+
+        .none {
+            display: none;
+        }
+
+        .show {
+            display: block;
+        }
+
+        .nav_pages {
+            ul {
+                padding-top: 2rem;
+                padding-left: 2rem;
+                z-index: 2;
+                font-size: 1rem;
+                font-weight: 900;
+                flex-direction: column;
+                gap: 2rem;
+                top: 4.5rem;
+                left: 0;
+                position: absolute;
+                width: 70%;
+                height: 100vh;
+                background-color: rgba(18, 18, 18, 0.977);
+            }
+        }
+
+    }
+}
+
+@media only screen and (max-width: 400px) {
+
+
+    .nav_container {
+
+        .img_container {
+            width: 120px;
+        }
+    }
+
+    .nav_container {
+        .authen {
+            ul {
+                gap: 1rem;
+            }
+        }
+    }
+}

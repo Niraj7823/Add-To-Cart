@@ -1,0 +1,209 @@
+/* Main Swiper container */
+.mySwiper2 {
+  width: 100%;
+  height: 80vh;
+  overflow: hidden;
+
+}
+
+.main_part {
+  position: relative;
+}
+
+.second_part {
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+}
+
+/* Main Swiper images */
+.mySwiper2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+
+}
+
+/* Thumbnail Swiper container */
+.mySwiper {
+  width: 400px;
+  height: 55px;
+  margin-bottom: 1.3rem;
+  display: flex;
+  justify-content: center;
+
+
+}
+
+/* Thumbnail Swiper images */
+.mySwiper .swiper-slide {
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+
+
+}
+
+.mySwiper .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  border-radius: 5px;
+
+}
+
+.details_flex {
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  color: white;
+  text-transform: capitalize;
+
+  >:nth-child(1) {
+    font-size: 1.5rem;
+
+  }
+
+  >:nth-child(2) {
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    font-weight: 500;
+  }
+
+  button {
+    padding: 0.8rem 2.5rem;
+    border-radius: 0.3rem;
+    border-style: none;
+    color: white;
+    font-weight: 800;
+    font-size: 1rem;
+    text-transform: capitalize;
+    background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
+  }
+}
+
+.details {
+  position: absolute;
+  left: 1rem;
+  bottom: 5rem;
+  z-index: 1;
+}
+
+
+/* Active thumbnail (highlight effect) */
+.mySwiper .swiper-slide-thumb-active {
+  opacity: 1;
+  border: 2px solid #fff;
+  border-radius: 5px;
+
+  &:hover {
+    transform: scale(0.95);
+    transition: 0.3s all;
+  }
+
+
+}
+
+@media only screen and (max-width: 1100px) {
+
+  .mySwiper2 {
+
+    height: 70vh;
+
+  }
+
+  .details_flex {
+
+    gap: 1.3rem;
+
+    >:nth-child(1) {
+      font-size: 1.2rem;
+    }
+
+    >:nth-child(2) {
+      font-size: 0.9rem;
+    }
+
+    button {
+      padding: 0.6rem 2rem;
+      font-size: 0.8rem;
+    }
+  }
+
+  .mySwiper {
+    width: 380px;
+    height: 50px;
+  }
+
+}
+
+@media only screen and (max-width: 800px) {
+
+  .details_flex {
+
+    gap: 0.8rem;
+
+    >:nth-child(1) {
+      font-size: 0.9rem;
+    }
+
+    >:nth-child(2) {
+      font-size: 0.5rem;
+    }
+
+    button {
+      padding: 0.4rem 1.3rem;
+      font-size: 0.6rem;
+    }
+  }
+
+  .mySwiper2 {
+
+    height: 60vh;
+  }
+
+  .mySwiper {
+    width: 330px;
+    height: 45px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .details_flex {
+      width: 40vw;
+      gap: 0.5rem;
+
+      >:nth-child(1) {
+        font-size: 0.7rem;
+      }
+
+      >:nth-child(2) {
+        font-size: 0.5rem;
+      }
+
+    }
+
+    .mySwiper2 {
+      height: 40vh;
+
+    }
+
+    .mySwiper {
+      width: 280px;
+      height: 35px;
+    }
+
+  }
+}
+
+
+
+
+
+
+
+
+
