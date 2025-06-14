@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+
+}
+
+:root {
+  background-color: black;
+}
+
+.custom-toast {
+
+  max-width: 200px;
+  font-size: 16px;
+}
+
+/* loding  style */
+
+/* From Uiverse.io by Cornerstone-04 */
+.loader {
+  width: 60px;
+  height: 60px;
+  border: 10px solid #341cd450;
+  border-top-color: #0400ff;
+  animation: spin013151 1s linear infinite;
+  border-radius: 100%;
+}
+
+@keyframes spin013151 {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+@media screen and (max-width: 500px) {
+
+  .custom-toast {
+
+    max-width: 200px;
+    font-size: 12px;
+  }
+}
+
+
+
+.button {
+  --green: #1BFD9C;
+  font-size: 0.8rem;
+  padding: 0.7rem 2rem;
+  text-transform: capitalize;
+  letter-spacing: 0.06rem;
+  position: relative;
+  border-radius: 0.6rem;
+  overflow: hidden;
+  transition: all 0.3s;
+  border: 2px solid #1b46fd;
+  background: linear-gradient(to right, rgba(27, 102, 253, 0.264) 1%, transparent 40%, #00000000 60%, rgb(27 37 253 / 10%) 100%);
+  color: white;
+  box-shadow: inset 0 0 10px rgb(27 93 253 / 40%), 0 0 9px 3px rgb(27 32 253 / 10%);
+}
+
+.button:hover {
+  color: #82ffc9;
+  box-shadow: inset 0 0 10px rgba(27, 110, 253, 0.6), 0 0 9px 3px rgba(27, 102, 253, 0.2);
+}
+
+.button:before {
+  content: "";
+  position: absolute;
+  left: -4em;
+  width: 4em;
+  height: 100%;
+  top: 0;
+  transition: .5s ease-in-out;
+  background: linear-gradient(to right, transparent 1%, rgba(27, 106, 253, 0.1) 40%, rgba(27, 91, 253, 0.1) 60%, transparent 100%);
+}
+
+.button:hover:before {
+  transform: translateX(15em);
+}
