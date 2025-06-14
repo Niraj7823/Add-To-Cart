@@ -13,6 +13,7 @@ import { DLT } from "../redux/action/action";
 const Header = () => {
   const getData = useSelector((state) => state.cartReducer.carts);
   const dispatch = useDispatch();
+  const [email, setEmail] = useState("");
 
   const [price, setPrice] = useState(0);
   const [anchorEl, setAnchorEl] = useState(null);
@@ -61,18 +62,19 @@ const Header = () => {
       }
     };
 
+    const userEmail = localStorage.getItem("signupEmail") || "";
+    setEmail(userEmail);
+
     document.addEventListener("mousedown", handleClickOutside);
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, []);
 
-  let email = useSelector((state) => state.userReducer.email);
-  if (email === "") {
-    email = localStorage.getItem("email");
-  }
-
-  const firstNameInitial = email ? email.charAt(0).toUpperCase() : "?";
+  const firstNameInitial =
+    email && typeof email === "string"
+      ? email.trim().charAt(0).toUpperCase()
+      : "?";
 
   return (
     <>
